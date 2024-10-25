@@ -29,10 +29,15 @@ Para ejecutar esta aplicación, asegúrate de tener Python instalado en tu siste
 2. Navega al directorio del proyecto en tu terminal.
 3. Crea y activa un entorno virtual** en el directorio del proyecto con el siguiente comando:
 
-  Crear entorno:
-    py -m venv myvenv
-  Activar entorno:
-    source myvenv/Scripts/activate
+Creacion del entorno:
+
+   ```bash
+   py -m venv myvenv
+
+Activacion del entorno:
+
+   ```bash
+   source myvenv/Scripts/activate
 
 4. Instala las dependencias con el siguiente comando:
 
