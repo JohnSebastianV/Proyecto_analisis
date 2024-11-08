@@ -13,7 +13,7 @@ def show_result():
         solid, area, volume = calculate_solid(num_faces, num_vertices, num_edges, edge_length)
 
         if solid:
-            label_result.config(text=f"El sólido es {solid}, su área superficial es {area:.2f}, su volumen es {volume:.2f}")
+            label_result.config(text=f"El sólido es un {solid}, su área superficial es {area:.2f}, su volumen es {volume:.2f}")
             draw_solid(solid, edge_length)
         else:
             messagebox.showerror("Error", "No se reconoce un sólido platónico con esos valores.")
@@ -23,18 +23,15 @@ def show_result():
 root = tk.Tk()
 root.title("Sólidos Platónicos")
 root.geometry("450x400")
-root.minsize(450, 400)  # Para evitar que la ventana se haga más pequeña
+root.minsize(450, 400)
 
-# Fondo decorativo con formas geométricas
 canvas_bg = tk.Canvas(root, width=450, height=400, bg="#EAEDED", highlightthickness=0)
 canvas_bg.place(relwidth=1, relheight=1)
 canvas_bg.create_oval(300, 20, 400, 120, fill="#D5DBDB", outline="")
 canvas_bg.create_oval(20, 250, 150, 380, fill="#D5DBDB", outline="")
 
-# Estilos de etiqueta
 label_style = {"bg": "#EAEDED", "font": ("Arial", 12, "bold"), "fg": "#566573"}
 
-# Etiquetas y campos de entrada, posicionados con coordenadas absolutas
 tk.Label(root, text="Número de caras:", **label_style).place(x=30, y=30)
 entry_faces = tk.Entry(root, font=("Arial", 10))
 entry_faces.place(x=200, y=30, width=200)
@@ -51,11 +48,9 @@ tk.Label(root, text="Longitud de la arista:", **label_style).place(x=30, y=180)
 entry_edge_length = tk.Entry(root, font=("Arial", 10))
 entry_edge_length.place(x=200, y=180, width=200)
 
-# Botón estilizado
 button_style = {"bg": "#85C1E9", "font": ("Arial", 12, "bold"), "fg": "#FFFFFF", "relief": "raised", "borderwidth": 2}
 button_calculate = tk.Button(root, text="Calcular", command=show_result, **button_style)
 button_calculate.place(x=160, y=240, width=120, height=30)
 
-# Etiqueta de resultado estilizada
 label_result = tk.Label(root, text="", font=("Arial", 9, "italic"), bg="#EAEDED", fg="#1C2833")
 label_result.place(x=10, y=300, width=435, height=40)

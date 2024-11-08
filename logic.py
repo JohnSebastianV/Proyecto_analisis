@@ -3,7 +3,7 @@ from math import sqrt
 def calculate_solid(num_faces, num_vertices, num_edges, edge_length):
     if num_faces == 4 and num_vertices == 4 and num_edges == 6:
         area = sqrt(3) * edge_length**2
-        volume = (edge_length**3) / (6 * sqrt(2))
+        volume = (edge_length**3 * sqrt(2)) / (12)
         return "Tetraedro", area, volume
     elif num_faces == 6 and num_vertices == 8 and num_edges == 12:
         area = 6 * edge_length**2
