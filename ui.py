@@ -27,8 +27,8 @@ root.minsize(450, 400)
 
 canvas_bg = tk.Canvas(root, width=450, height=400, bg="#EAEDED", highlightthickness=0)
 canvas_bg.place(relwidth=1, relheight=1)
-canvas_bg.create_oval(300, 20, 400, 120, fill="#D5DBDB", outline="")
-canvas_bg.create_oval(20, 250, 150, 380, fill="#D5DBDB", outline="")
+canvas_bg.create_oval(300, 20, 400, 120, fill="#9EECFF", outline="")
+canvas_bg.create_oval(20, 250, 150, 380, fill="#9EECFF", outline="")
 
 label_style = {"bg": "#EAEDED", "font": ("Arial", 12, "bold"), "fg": "#566573"}
 
