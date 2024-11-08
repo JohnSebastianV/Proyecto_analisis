@@ -27,22 +27,21 @@ Para ejecutar esta aplicación, asegúrate de tener Python instalado en tu siste
 
 1. Clona este repositorio o descarga los archivos del proyecto.
 2. Navega al directorio del proyecto en tu terminal.
-3. Crea y activa un entorno virtual** en el directorio del proyecto con el siguiente comando:
+3. Crea y activa un entorno virtual en el directorio del proyecto con los siguientes comandos:
 
-Creacion del entorno:
-
+   Creación del entorno:
    ```bash
    py -m venv myvenv
 
 Activacion del entorno:
 
-   ```bash
-   source myvenv/Scripts/activate
+      
+      source myvenv/Scripts/activate
 
 4. Instala las dependencias con el siguiente comando:
 
-   ```bash
-   pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
 
 **NOTA**: La version de python usada para este proyecto fue la 3.11.9 se recomienda usar la misma para evitar conflictos de dependencias
 
@@ -57,3 +56,19 @@ Activacion del entorno:
 
 ## Licencia
 Este proyecto está licenciado bajo la [MIT License](LICENSE).
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
